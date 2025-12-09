@@ -27,7 +27,7 @@ As estruturas de dados foram projetadas para replicar o layout de metadados de u
 Estruturas FCB / Inode Simulado: 
 Estas estruturas de dados são fundamentais para o funcionamento do sistema de arquivos, pois elas definem onde o arquivo está, quem pode acessá-lo e quais são seus atributos.
 
-	Inode (struct Inode): É o File Control Block (FCB) ou o "RG do Arquivo". Armazena todos os atributos sobre o arquivo (tamanho, permissões, proprietário, tipo) e os endereços dos blocos de dados. É a estrutura central, pois permite que o sistema encontre o conteúdo físico do arquivo sem depender do seu nome.
+Inode (struct Inode): É o File Control Block (FCB) ou o "RG do Arquivo". Armazena todos os atributos sobre o arquivo (tamanho, permissões, proprietário, tipo) e os endereços dos blocos de dados. É a estrutura central, pois permite que o sistema encontre o conteúdo físico do arquivo sem depender do seu nome.	
 
 Superbloco (struct Superbloco): É o "Cabeçalho" e o gerenciador do Sistema. Contém dados essenciais sobre o disco virtual, como o tamanho total do disco, a localização da Tabela de Inodes e o Bitmap, que rastreia quais blocos de dados estão livres ou ocupados.
 
